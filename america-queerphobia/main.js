@@ -26,7 +26,7 @@ function prevPage() {
     else if (page == '') {
         return
     }
-    else {
+    else {x 
         location.pathname = 'america-queerphobia/' + (page - 1);
     }
 }
