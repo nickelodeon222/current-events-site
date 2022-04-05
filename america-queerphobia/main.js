@@ -37,3 +37,20 @@ window.addEventListener("keydown", ev => {
     if (ev.code === 'ArrowLeft')
         prevPage()
 });
+
+let touchX;
+let oldTouchX=0;
+window.addEventListener("touchstart", ev => {
+    oldTouchX = ev.changedTouches[0].screenX;
+
+})
+
+window.addEventListener("touchend", ev => {
+    touchX = ev.changedTouches[0].screenX;
+    if (touchX < oldTouchX) {
+        nextPage()
+    }
+    else if (touchX > oldTouchX) {
+        prevPage()
+    }
+})
