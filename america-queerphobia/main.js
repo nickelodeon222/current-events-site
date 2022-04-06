@@ -1,6 +1,6 @@
 function nextPage() {
     const url = location.pathname;
-    let page = url.split("/")[2]
+    let page = url.split("/")[3]
 
     if (page == '')
         page = 2;
@@ -14,20 +14,20 @@ function nextPage() {
     }
         
     
-    location.pathname = 'america-queerphobia/' + page;
+    location.pathname = 'current-events-site/america-queerphobia/' + page;
 }
 
 function prevPage() {
     const url = location.pathname;
-    let page = url.split("/")[2]
+    let page = url.split("/")[3]
     if (page == 2) {
-        location.pathname = 'america-queerphobia/';
+        location.pathname = 'current-events-site/america-queerphobia/';
     }
     else if (page == '') {
         return
     }
     else {x 
-        location.pathname = 'america-queerphobia/' + (page - 1);
+        location.pathname = 'current-events-site/america-queerphobia/' + (page - 1);
     }
 }
 
