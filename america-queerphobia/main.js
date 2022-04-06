@@ -24,7 +24,7 @@ function prevPage() {
         location.pathname = 'current-events-site/america-queerphobia/';
     }
     else if (page == '') {
-        return
+        // return
     }
     else {
         location.pathname = 'current-events-site/america-queerphobia/' + (page - 1);
