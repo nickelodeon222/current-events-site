@@ -1,3 +1,68 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.push-down {
+    margin-top: 50%;
+}
+
+.container {
+    width: 70%;
+    float: right;
+    margin-right: 10%;
+}
+
+.small-text {
+    font-size: smaller;
+}
+
+.title {
+    font-size: 250%;
+}
+
+.push-down-less {
+    margin-top: 10%;
+}
+
+.fake-link {
+    cursor: pointer;
+}
+
+#author {
+    user-select: none;
+}
+
+#LOGO {
+    font-family: 'Rubik Puddles', cursive;
+    font-weight: bolder;
+    color: #ff6161;
+    margin-top: 3%;
+    font-size: 50px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li p, .nav-bar li a {
+    line-height: 50%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-bar li p:hover, .nav-bar li a:hover {
+    background-color: #111;
 }
